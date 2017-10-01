@@ -5,14 +5,14 @@ if !has('gui_running')
 endif
 
 " GUI color definitions
-let s:gui00 = "1f1d17"
-let s:gui01 = "302f26"
+let s:gui00 = "1f1e19"
+let s:gui01 = "302f28"
 let s:gui02 = "524f44"
-let s:gui03 = "706e63"
+let s:gui03 = "706f67"
 let s:gui04 = "99978d"
-let s:gui05 = "bfbeb8"
-let s:gui06 = "e8e7e1"
-let s:gui07 = "fffefa"
+let s:gui05 = "bfbdb0"
+let s:gui06 = "e8e7df"
+let s:gui07 = "fffdf5"
 let s:gui08 = "d45959"
 let s:gui09 = "d48d46"
 let s:gui0A = "bf9b30"
@@ -42,22 +42,22 @@ let s:cterm0F = "17"
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#1f1d17"
+  let g:terminal_color_0 =  "#1f1e19"
   let g:terminal_color_1 =  "#d45959"
   let g:terminal_color_2 =  "#6b9456"
   let g:terminal_color_3 =  "#bf9b30"
   let g:terminal_color_4 =  "#6f97bf"
   let g:terminal_color_5 =  "#a080bf"
   let g:terminal_color_6 =  "#3e9494"
-  let g:terminal_color_7 =  "#bfbeb8"
-  let g:terminal_color_8 =  "#706e63"
+  let g:terminal_color_7 =  "#bfbdb0"
+  let g:terminal_color_8 =  "#706f67"
   let g:terminal_color_9 =  "#d48d46"
-  let g:terminal_color_10 = "#302f26"
+  let g:terminal_color_10 = "#302f28"
   let g:terminal_color_11 = "#524f44"
   let g:terminal_color_12 = "#99978d"
-  let g:terminal_color_13 = "#e8e7e1"
+  let g:terminal_color_13 = "#e8e7df"
   let g:terminal_color_14 = "#d48e99"
-  let g:terminal_color_15 = "#fffefa"
+  let g:terminal_color_15 = "#fffdf5"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_7
   if &background == "light"
@@ -106,7 +106,7 @@ call <sid>hi("Folded",        s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("IncSearch",     s:gui01, s:gui09, s:cterm01, s:cterm09, "none", "")
 call <sid>hi("Italic",        "", "", "", "", "none", "")
 call <sid>hi("Macro",         s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("MatchParen",    "", s:gui03, "", s:cterm03,  "", "")
+call <sid>hi("MatchParen",    s:gui00, s:gui03, s:cterm00, s:cterm03,  "", "")
 call <sid>hi("ModeMsg",       s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("MoreMsg",       s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("Question",      s:gui0D, "", s:cterm0D, "", "", "")
@@ -124,7 +124,7 @@ call <sid>hi("Cursor",        s:gui00, s:gui04, s:cterm00, s:cterm04, "", "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("LineNr",        s:gui04, s:gui01, s:cterm04, s:cterm01, "", "")
 call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
-call <sid>hi("statusline",    s:gui00, s:gui03, s:cterm00, s:cterm03, "none", "")
+call <sid>hi("statusline",    s:gui00, s:gui04, s:cterm00, s:cterm04, "none", "")
 call <sid>hi("StatusLineNC",  s:gui05, s:gui01, s:cterm05, s:cterm01, "none", "")
 call <sid>hi("VertSplit",     s:gui02, s:gui02, s:cterm02, s:cterm02, "none", "")
 call <sid>hi("ColorColumn",   "", s:gui01, "", s:cterm01, "none", "")
@@ -140,7 +140,7 @@ call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none", ""
 
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")
-call <sid>hi("Character",    s:gui04, "", s:cterm04, "", "", "")
+call <sid>hi("Character",    s:gui05, "", s:cterm05, "", "", "")
 call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("Conditional",  s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("Constant",     s:gui09, "", s:cterm09, "", "", "")
@@ -148,7 +148,7 @@ call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none", "")
 call <sid>hi("Delimiter",    s:gui0F, "", s:cterm0F, "", "", "")
 call <sid>hi("Float",        s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Function",     s:gui0D, "", s:cterm0D, "", "", "")
-call <sid>hi("Identifier",   s:gui04, "", s:cterm04, "", "bold", "")
+call <sid>hi("Identifier",   s:gui05, "", s:cterm05, "", "bold", "")
 call <sid>hi("Include",      s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("Keyword",      s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("Label",        s:gui0A, "", s:cterm0A, "", "", "")
