@@ -14,13 +14,13 @@ let s:gui05 = "bfbdb0"
 let s:gui06 = "e8e7df"
 let s:gui07 = "fffdf5"
 let s:gui08 = "d45959"
-let s:gui09 = "d48d46"
-let s:gui0A = "bf9b30"
-let s:gui0B = "6b9456"
+let s:gui09 = "d47c24"
+let s:gui0A = "bf8f00"
+let s:gui0B = "63944a"
 let s:gui0C = "3e9494"
-let s:gui0D = "6f97bf"
-let s:gui0E = "a080bf"
-let s:gui0F = "d48e99"
+let s:gui0D = "608fbf"
+let s:gui0E = "8f72ab"
+let s:gui0F = "bf6f7c"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -44,19 +44,19 @@ let s:cterm0F = "17"
 if has("nvim")
   let g:terminal_color_0 =  "#1f1e19"
   let g:terminal_color_1 =  "#d45959"
-  let g:terminal_color_2 =  "#6b9456"
-  let g:terminal_color_3 =  "#bf9b30"
-  let g:terminal_color_4 =  "#6f97bf"
-  let g:terminal_color_5 =  "#a080bf"
+  let g:terminal_color_2 =  "#63944a"
+  let g:terminal_color_3 =  "#bf8f00"
+  let g:terminal_color_4 =  "#608fbf"
+  let g:terminal_color_5 =  "#8f72ab"
   let g:terminal_color_6 =  "#3e9494"
   let g:terminal_color_7 =  "#bfbdb0"
   let g:terminal_color_8 =  "#706f67"
-  let g:terminal_color_9 =  "#d48d46"
+  let g:terminal_color_9 =  "#d47c24"
   let g:terminal_color_10 = "#302f28"
   let g:terminal_color_11 = "#524f44"
   let g:terminal_color_12 = "#99978d"
   let g:terminal_color_13 = "#e8e7df"
-  let g:terminal_color_14 = "#d48e99"
+  let g:terminal_color_14 = "#bf6f7c"
   let g:terminal_color_15 = "#fffdf5"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_7
@@ -130,7 +130,7 @@ call <sid>hi("VertSplit",     s:gui02, s:gui02, s:cterm02, s:cterm02, "none", ""
 call <sid>hi("ColorColumn",   "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorColumn",  "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorLine",    "", s:gui01, "", s:cterm01, "none", "")
-call <sid>hi("CursorLineNr",  s:gui04, s:gui01, s:cterm04, s:cterm01, "", "")
+call <sid>hi("CursorLineNr",  s:gui00, s:gui03, s:cterm00, s:cterm03, "", "")
 call <sid>hi("QuickFixLine",  "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("PMenu",         s:gui05, s:gui01, s:cterm05, s:cterm01, "none", "")
 call <sid>hi("PMenuSel",      s:gui01, s:gui05, s:cterm01, s:cterm05, "", "")

@@ -19,16 +19,17 @@
 %s/f8f8f8/fffdf5/ |
 
 %s/ab4642/d45959/ |
-%s/dc9656/d48d46/ |
-%s/f7ca88/bf9b30/ |
-%s/a1b56c/6b9456/ |
+%s/dc9656/d47c24/ |
+%s/f7ca88/bf8f00/ |
+%s/a1b56c/63944a/ |
 %s/86c1b9/3e9494/ |
-%s/7cafc2/6f97bf/ |
-%s/ba8baf/a080bf/ |
-%s/a16946/d48e99/ |
+%s/7cafc2/608fbf/ |
+%s/ba8baf/8f72ab/ |
+%s/a16946/bf6f7c/ |
 
 %s/Character",    s:gui08, "", s:cterm08/Character",    s:gui05, "", s:cterm05/ |
 %s/Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05/Cursor",        s:gui00, s:gui04, s:cterm00, s:cterm04/ |
+%s/CursorLineNr",  s:gui04, s:gui01, s:cterm04, s:cterm01/CursorLineNr",  s:gui00, s:gui03, s:cterm00, s:cterm03/ |
 %s/Identifier",   s:gui08, "", s:cterm08, "", "none/Identifier",   s:gui05, "", s:cterm05, "", "bold/ |
 %s/LineNr",        s:gui03, s:gui01, s:cterm03/LineNr",        s:gui04, s:gui01, s:cterm04/ |
 %s/MatchParen",    "", s:gui03, "", s:cterm03/MatchParen",    s:gui00, s:gui03, s:cterm00, s:cterm03/ |
