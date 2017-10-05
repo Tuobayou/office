@@ -16,14 +16,14 @@ let s:g4 = '99978d'
 let s:g5 = 'bfbdb0'
 let s:g6 = 'e8e7df'
 let s:g7 = 'fffdf5'
-let s:g8 = 'd45959'
-let s:g9 = 'd47c24'
-let s:gA = 'bf8f00'
-let s:gB = '63944a'
-let s:gC = '3e9494'
-let s:gD = '608fbf'
-let s:gE = '8f72ab'
-let s:gF = 'bf6f7c'
+let s:g8 = 'ff5a54'
+let s:g9 = 'eb8f4e'
+let s:gA = 'ebd43b'
+let s:gB = '5c9e65'
+let s:gC = '5c9e99'
+let s:gD = '75aac9'
+let s:gE = 'a687c9'
+let s:gF = 'e082a9'
 
 " terminal colours
 let s:t0 = '00'
@@ -46,20 +46,20 @@ let s:tF = '17'
 " neovim colours
 if has('nvim')
   let g:terminal_color_0 =  '#1f1e19'
-  let g:terminal_color_1 =  '#d45959'
-  let g:terminal_color_2 =  '#63944a'
-  let g:terminal_color_3 =  '#bf8f00'
-  let g:terminal_color_4 =  '#608fbf'
-  let g:terminal_color_5 =  '#8f72ab'
-  let g:terminal_color_6 =  '#3e9494'
+  let g:terminal_color_1 =  '#ff5a54'
+  let g:terminal_color_2 =  '#5c9e65'
+  let g:terminal_color_3 =  '#ebd43b'
+  let g:terminal_color_4 =  '#75aac9'
+  let g:terminal_color_5 =  '#a687c9'
+  let g:terminal_color_6 =  '#5c9e99'
   let g:terminal_color_7 =  '#bfbdb0'
   let g:terminal_color_8 =  '#706f67'
-  let g:terminal_color_9 =  '#d47c24'
+  let g:terminal_color_9 =  '#eb8f4e'
   let g:terminal_color_10 = '#302f28'
   let g:terminal_color_11 = '#524f44'
   let g:terminal_color_12 = '#99978d'
   let g:terminal_color_13 = '#e8e7df'
-  let g:terminal_color_14 = '#bf6f7c'
+  let g:terminal_color_14 = '#e082a9'
   let g:terminal_color_15 = '#fffdf5'
 endif
 
@@ -93,11 +93,11 @@ endfun
 "=== BASIC HIGHLIGHTING =======================================================
 
 " cursor + status line + selected tab
-cal <sid>h('Cursor'           , s:g0 , s:g4 , s:t0 , s:t4 , 'none'      , ''  )
-cal <sid>h('StatusLine'       , s:g0 , s:g4 , s:t0 , s:t4 , 'none'      , ''  )
-cal <sid>h('StatusLineTerm'   , s:g0 , s:g4 , s:t0 , s:t4 , 'none'      , ''  )
-cal <sid>h('TabLineSel'       , s:g0 , s:g4 , s:t0 , s:t4 , 'none'      , ''  )
-cal <sid>h('TermCursor'       , s:g0 , s:g4 , s:t0 , s:t4 , 'none'      , ''  )
+cal <sid>h('Cursor'           , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
+cal <sid>h('StatusLine'       , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
+cal <sid>h('StatusLineTerm'   , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
+cal <sid>h('TabLineSel'       , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
+cal <sid>h('TermCursor'       , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
 
 " line numbers
 cal <sid>h('CursorLineNr'     , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
@@ -131,9 +131,8 @@ cal <sid>h('TermCursorNC'     , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
 cal <sid>h('DiffChange'       , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
 cal <sid>h('FoldColumn'       , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
 cal <sid>h('Folded'           , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
-cal <sid>h('MatchParen'       , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
 cal <sid>h('SignColumn'       , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
-cal <sid>h('TabLine'          , s:g4 , s:g1 , s:g4 , s:t1 , 'none'      , ''  )
+cal <sid>h('TabLine'          , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
 cal <sid>h('VisualNOS'        , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
 
 " strongly highlighted background
@@ -145,7 +144,7 @@ cal <sid>h('PmenuSel'         , s:g0 , s:g5 , s:t0 , s:t5 , 'none'      , ''  )
 cal <sid>h('WildMenu'         , s:g0 , s:g6 , s:t0 , s:t6 , 'none'      , ''  )
 
 " solid lines
-cal <sid>h('PmenuSbar'        , s:g3 , s:g3 , s:t3 , s:t3 , 'none'      , ''  )
+cal <sid>h('PmenuSbar'        , s:g1 , s:g1 , s:t1 , s:t1 , 'none'      , ''  )
 cal <sid>h('PmenuThumb'       , s:g4 , s:g4 , s:t4 , s:t4 , 'none'      , ''  )
 cal <sid>h('VertSplit'        , s:g2 , s:g2 , s:t2 , s:t2 , 'none'      , ''  )
 
@@ -162,7 +161,7 @@ cal <sid>h('WarningMsg'       , s:g8 , s:g0 , s:t8 , s:t0 , 'none'      , ''  )
 
 " ORANGE for preliminary elements
 cal <sid>h('Define'           , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
-cal <sid>h('IncSearch'        , s:g1 , s:g9 , s:t1 , s:t9 , 'none'      , ''  )
+cal <sid>h('IncSearch'        , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('Include'          , s:g9 , ''   , s:t9 , ''   , ''          , ''  )
 cal <sid>h('Macro'            , s:g9 , ''   , s:t9 , ''   , ''          , ''  )
 cal <sid>h('PreCondit'        , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
@@ -171,9 +170,10 @@ cal <sid>h('SpellCap'         , ''   , ''   , s:t9 , s:t0 , 'undercurl' , s:g9)
 cal <sid>h('Title'            , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
 
 " YELLOW for highlighted elements
-cal <sid>h('DiffText'         , s:gA , s:g1 , s:tA , s:t1 , 'none'      , ''  )
+cal <sid>h('DiffText'         , s:g0 , s:gA , s:t0 , s:tA , 'none'      , ''  )
+cal <sid>h('MatchParen'       , s:g0 , s:gA , s:t0 , s:tA , 'none'      , ''  )
 cal <sid>h('Search'           , s:g0 , s:gA , s:t0 , s:tA , 'none'      , ''  )
-cal <sid>h('Todo'             , s:gA , s:g1 , s:tA , s:t1 , 'none'      , ''  )
+cal <sid>h('Todo'             , s:g0 , s:gA , s:t0 , s:tA , 'none'      , ''  )
 
 " GREEN for action elements
 cal <sid>h('Conditional'      , s:gB , ''   , s:tB , ''   , ''          , ''  )
