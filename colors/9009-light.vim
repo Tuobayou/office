@@ -9,21 +9,21 @@
 
 " GUI colours
 let s:g0 = 'fffdf5'
-let s:g1 = 'e8e7df'
+let s:g1 = 'e0dfd7'
 let s:g2 = 'bfbdb0'
-let s:g3 = '99978d'
-let s:g4 = '706f67'
-let s:g5 = '524f44'
-let s:g6 = '302f28'
-let s:g7 = '1f1e19'
-let s:g8 = 'f5423c'
+let s:g3 = '949288'
+let s:g4 = '75746c'
+let s:g5 = '54534d'
+let s:g6 = '403f3b'
+let s:g7 = '2b2b28'
+let s:g8 = 'eb403a'
 let s:g9 = 'eb6d13'
-let s:gA = 'e0bf12'
-let s:gB = '289e37'
-let s:gC = '0d9e92'
-let s:gD = '3292c9'
-let s:gE = '9365c9'
-let s:gF = 'e05e95'
+let s:gA = 'd4b411'
+let s:gB = '259433'
+let s:gC = '009488'
+let s:gD = '308bbf'
+let s:gE = '8c60bf'
+let s:gF = 'e05e8e'
 
 " terminal colours
 let s:t0 = '00'
@@ -46,21 +46,21 @@ let s:tF = '17'
 " neovim colours
 if has('nvim')
   let g:terminal_color_0 =  '#fffdf5'
-  let g:terminal_color_1 =  '#f5423c'
-  let g:terminal_color_2 =  '#289e37'
-  let g:terminal_color_3 =  '#e0bf12'
-  let g:terminal_color_4 =  '#3292c9'
-  let g:terminal_color_5 =  '#9365c9'
-  let g:terminal_color_6 =  '#0d9e92'
-  let g:terminal_color_7 =  '#524f44'
-  let g:terminal_color_8 =  '#99978d'
+  let g:terminal_color_1 =  '#eb403a'
+  let g:terminal_color_2 =  '#259433'
+  let g:terminal_color_3 =  '#d4b411'
+  let g:terminal_color_4 =  '#308bbf'
+  let g:terminal_color_5 =  '#8c60bf'
+  let g:terminal_color_6 =  '#009488'
+  let g:terminal_color_7 =  '#54534d'
+  let g:terminal_color_8 =  '#949288'
   let g:terminal_color_9 =  '#eb6d13'
-  let g:terminal_color_10 = '#e8e7df'
+  let g:terminal_color_10 = '#e0dfd7'
   let g:terminal_color_11 = '#bfbdb0'
-  let g:terminal_color_12 = '#706f67'
-  let g:terminal_color_13 = '#302f28'
-  let g:terminal_color_14 = '#e05e95'
-  let g:terminal_color_15 = '#1f1e19'
+  let g:terminal_color_12 = '#75746c'
+  let g:terminal_color_13 = '#403f3b'
+  let g:terminal_color_14 = '#e05e8e'
+  let g:terminal_color_15 = '#2b2b28'
 endif
 
 
@@ -93,11 +93,11 @@ endfun
 "=== BASIC HIGHLIGHTING =======================================================
 
 " cursor + status line + selected tab
-cal <sid>h('Cursor'           , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
-cal <sid>h('StatusLine'       , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
-cal <sid>h('StatusLineTerm'   , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
-cal <sid>h('TabLineSel'       , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
-cal <sid>h('TermCursor'       , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
+cal <sid>h('Cursor'           , s:g0 , s:g4 , s:t0 , s:t4 , 'none'      , ''  )
+cal <sid>h('StatusLine'       , s:g0 , s:g4 , s:t0 , s:t4 , 'none'      , ''  )
+cal <sid>h('StatusLineTerm'   , s:g0 , s:g4 , s:t0 , s:t4 , 'none'      , ''  )
+cal <sid>h('TabLineSel'       , s:g0 , s:g4 , s:t0 , s:t4 , 'none'      , ''  )
+cal <sid>h('TermCursor'       , s:g0 , s:g4 , s:t0 , s:t4 , 'none'      , ''  )
 
 " line numbers
 cal <sid>h('CursorLineNr'     , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
