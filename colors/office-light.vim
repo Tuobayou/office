@@ -69,9 +69,9 @@ endif
 " run theme-setting script if using terminal vim
 if !has('gui_running')
   execute 'silent !/bin/sh $HOME/.nightshell/office-light'
-"  autocmd CursorMoved * execute 'if !exists("colors_name") |
-"        \ let colors_name = "office-light" |
-"        \ colorscheme office-light | endif'
+  autocmd CursorMoved * execute 'if !exists("colors_name") |
+        \ let colors_name = "office-light" |
+        \ colorscheme office-light | endif'
 endif
 
 " clear old theme, activate new
