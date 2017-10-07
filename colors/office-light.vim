@@ -1,4 +1,4 @@
-" 9009-light, a vim colourscheme by nightsense
+" office-light, a vim colourscheme by nightsense
 "
 " generated with a theme template adapted from
 " base16-vim (https://github.com/chriskempson/base16-vim)
@@ -10,20 +10,20 @@
 " GUI colours
 let s:g0 = 'fffdf5'
 let s:g1 = 'e0dfd7'
-let s:g2 = 'bfbdb0'
+let s:g2 = 'bfbcb0'
 let s:g3 = '949288'
-let s:g4 = '75746c'
+let s:g4 = '75736c'
 let s:g5 = '54534d'
 let s:g6 = '403f3b'
 let s:g7 = '2b2b28'
-let s:g8 = 'eb403a'
-let s:g9 = 'eb6d13'
-let s:gA = 'ebc83b'
-let s:gB = '259433'
-let s:gC = '009488'
-let s:gD = '308bbf'
-let s:gE = '8c60bf'
-let s:gF = 'e05e89'
+let s:g8 = 'eb3a3a'
+let s:g9 = 'e06812'
+let s:gA = 'e0bf38'
+let s:gB = '25942e'
+let s:gC = '0c9489'
+let s:gD = '3083bf'
+let s:gE = '8760bf'
+let s:gF = 'e05e85'
 
 " terminal colours
 let s:t0 = '00'
@@ -46,20 +46,20 @@ let s:tF = '17'
 " neovim colours
 if has('nvim')
   let g:terminal_color_0 =  '#fffdf5'
-  let g:terminal_color_1 =  '#eb403a'
-  let g:terminal_color_2 =  '#259433'
-  let g:terminal_color_3 =  '#ebc83b'
-  let g:terminal_color_4 =  '#308bbf'
-  let g:terminal_color_5 =  '#8c60bf'
-  let g:terminal_color_6 =  '#009488'
+  let g:terminal_color_1 =  '#eb3a3a'
+  let g:terminal_color_2 =  '#25942e'
+  let g:terminal_color_3 =  '#e0bf38'
+  let g:terminal_color_4 =  '#3083bf'
+  let g:terminal_color_5 =  '#8760bf'
+  let g:terminal_color_6 =  '#0c9489'
   let g:terminal_color_7 =  '#54534d'
   let g:terminal_color_8 =  '#949288'
-  let g:terminal_color_9 =  '#eb6d13'
+  let g:terminal_color_9 =  '#e06812'
   let g:terminal_color_10 = '#e0dfd7'
-  let g:terminal_color_11 = '#bfbdb0'
-  let g:terminal_color_12 = '#75746c'
+  let g:terminal_color_11 = '#bfbcb0'
+  let g:terminal_color_12 = '#75736c'
   let g:terminal_color_13 = '#403f3b'
-  let g:terminal_color_14 = '#e05e89'
+  let g:terminal_color_14 = '#e05e85'
   let g:terminal_color_15 = '#2b2b28'
 endif
 
@@ -68,16 +68,16 @@ endif
 
 " run theme-setting script if using terminal vim
 if !has('gui_running')
-  execute 'silent !/bin/sh $HOME/.nightshell/9009-light'
+  execute 'silent !/bin/sh $HOME/.nightshell/office-light'
   autocmd CursorMoved * execute 'if !exists("colors_name") |
-        \ let colors_name = "9009-light" |
-        \ colorscheme 9009-light | endif'
+        \ let colors_name = "office-light" |
+        \ colorscheme office-light | endif'
 endif
 
 " clear old theme, activate new
 hi clear
 syntax reset
-let colors_name = '9009-light'
+let colors_name = 'office-light'
 
 " highlighting function
 fun! <sid>h(x, gf, gb, cf, cb, a, s)
@@ -136,6 +136,7 @@ cal <sid>h('TabLine'          , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
 cal <sid>h('VisualNOS'        , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
 
 " strongly highlighted background
+cal <sid>h('MatchParen'       , s:g6 , s:g2 , s:t6 , s:t2 , 'none'      , ''  )
 cal <sid>h('Pmenu'            , s:g6 , s:g2 , s:t6 , s:t2 , 'none'      , ''  )
 cal <sid>h('Visual'           , s:g6 , s:g2 , s:t6 , s:t2 , 'none'      , ''  )
 
@@ -171,7 +172,6 @@ cal <sid>h('Title'            , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
 
 " YELLOW for highlighted elements
 cal <sid>h('DiffText'         , s:g7 , s:gA , s:t7 , s:tA , 'none'      , ''  )
-cal <sid>h('MatchParen'       , s:g7 , s:gA , s:t7 , s:tA , 'none'      , ''  )
 cal <sid>h('Search'           , s:g7 , s:gA , s:t7 , s:tA , 'none'      , ''  )
 cal <sid>h('Todo'             , s:g7 , s:gA , s:t7 , s:tA , 'none'      , ''  )
 
