@@ -69,8 +69,12 @@ endif
 " run theme-setting script if using terminal vim
 if !has('gui_running')
   execute 'silent !/bin/sh $HOME/.nightshell/office-dark'
-  autocmd CursorMoved * execute 'if !exists("colors_name") |
-        \ colorscheme office-dark | endif'
+  augroup ThemeSet
+    autocmd!
+    autocmd CursorMoved * execute 'if !exists("colors_name") |
+      \ colorscheme office-dark | else |
+      \ augroup ThemeSet | autocmd! | augroup END | endif'
+  augroup END
 endif
 
 " clear old theme, activate new
