@@ -80,6 +80,7 @@ set background=dark
 augroup ThemeSet
   autocmd!
   autocmd CursorMoved * execute 'if !exists("colors_name") |
+    \ let colors_name = "office-dark" |
     \ colorscheme office-dark | else |
     \ augroup ThemeSet | autocmd! | augroup END | endif'
 augroup END
