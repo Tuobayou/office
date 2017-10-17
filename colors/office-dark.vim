@@ -67,8 +67,10 @@ endif
 "=== OTHER PREPARATION ========================================================
 
 " run theme-setting script if using terminal vim
-if !has('gui_running')
-  execute 'silent !/bin/sh $HOME/.nightshell/office-dark'
+if filereadable(expand('~/.nightshell/office-dark'))
+  if !has('gui_running')
+    execute 'silent !/bin/sh $HOME/.nightshell/office-dark'
+  endif
 endif
 
 " clear old theme
